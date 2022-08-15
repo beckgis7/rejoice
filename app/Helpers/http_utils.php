@@ -85,8 +85,33 @@
         return $data['data'];
     }
 
-    function post_data($service_name, $payload, $headers)
+//..........................................................................................................................................................................
+    function get_data($service_name)
     {
+        $headers = array('Content-Type:application/json');
+        $payload = [];
+        $endpoint = env('API_BASE_URL').$service_name;
+
+        $resp = CurlUtils::callAPI('GET', $payload, $endpoint, $headers);
+
+        return json_decode($resp, true);
+
+    }
+    function get_data_id($service_name,$id)
+    {
+        $headers = array('Content-Type:application/json');
+        $payload = [];
+        $endpoint = env('API_BASE_URL').$service_name.$id;
+
+        $resp = CurlUtils::callAPI('GET', $payload, $endpoint, $headers);
+
+        return json_decode($resp, true);
+
+    }
+
+    function post_data($service_name, $payload)
+    {
+        $headers = array('Content-Type:application/json');
         $endpoint = env('API_BASE_URL').$service_name;
 
         $resp = CurlUtils::callAPI('POST', $payload, $endpoint, $headers);
@@ -94,4 +119,46 @@
         return json_decode($resp, true);
 
         //return $data['data'];
+    }
+
+    function get_alpha_range($index): string
+    {
+        switch ($index){
+            case 1:
+                $range = 'A-C';
+            break;
+            case 2:
+                $range = 'E-O';
+                break;
+            case 3:
+                $range = 'S-W';
+                break;
+            default:
+                $range = 'V-Z';
+        }
+        return $range;
+    }
+
+/*    620	03	gh	Ghana	233	Airtel/Tigo
+620	06	gh	Ghana	233	Airtel/Tigo
+620	04	gh	Ghana	233	Expresso Ghana Ltd
+620	07	gh	Ghana	233	GloMobile
+620	01	gh	Ghana	233	MTN
+620	02	gh	Ghana	233	Vodafone*/
+    function mnc_name($mnc){
+       switch ($mnc){
+           case 01:
+               return 'MTN';
+           case 02:
+               return 'VDF';
+           case 03:
+           case 06:
+               return 'ATL';
+           case 04:
+               return 'Expresso';
+           case 07:
+               return 'Glo';
+           default:
+               return null;
+       }
     }

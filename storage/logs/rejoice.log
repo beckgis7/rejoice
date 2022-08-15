@@ -543,3 +543,78 @@ User session:
     "history_bag": []
 }
 
+#10 [EMERGENCY] [Mon, 15 08 2022, 14:48:08]
+Error:
+syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST) in file C:\laragon\www\mybet-ussd\app\Menus\Sub\Menu2.php on line 15
+
+Processing menu: Sub::Menu1 in file C:\laragon\www\mybet-ussd\app\Menus\Sub\Menu1.php
+
+Stack trace:
+
+
+#0 C:\laragon\www\mybet-ussd\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\laragon\\www\\...')
+
+
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Menus\\Sub\\M...')
+
+
+#2 [internal function]: spl_autoload_call('App\\Menus\\Sub\\M...')
+
+
+#3 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Menu\Menus.php(342): class_exists('App\\Menus\\Sub\\M...')
+
+
+#4 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(501): Rejoice\Menu\Menus->menuStateExists('Sub::Menu2')
+
+
+#5 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#6 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#7 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#8 C:\laragon\www\mybet-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#9 {main}
+
+User session:
+{
+    "__last_connection": 1660574884.756652,
+    "user_previous_responses": {
+        "welcome": [
+            "1"
+        ],
+        "Sub::Menu1": []
+    },
+    "modify_menus": {
+        "actions": {
+            "1": {
+                "display": "Confirm",
+                "next_menu": "Sub::Menu2"
+            },
+            "2": {
+                "display": "Decline",
+                "next_menu": "__end"
+            }
+        }
+    },
+    "current_menu_name": "Sub::Menu1",
+    "id": "1660574882168",
+    "currentMenuSplitted": true,
+    "currentMenuSplitIndex": 1,
+    "currentMenuSplitStart": false,
+    "currentMenuSplitEnd": true,
+    "currentMenuChunks": [
+        "Subscription successful.\nYou will be required to\nanswer 12 questions\neach week for 7 weeks.\nYou will be charged\n00. Next page",
+        "GHS1 for each answer\n\n1. Confirm\n2. Decline\n0. Back"
+    ],
+    "currentMenuHasBackAction": false,
+    "history_bag": [
+        "welcome"
+    ]
+}
+

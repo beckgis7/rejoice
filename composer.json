@@ -21,7 +21,12 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/"
-        }
+        },
+        "files": [
+            "app/Helpers/http_utils.php",
+            "app/Helpers/directoryUtils.php",
+            "app/Helpers/logUtils.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
