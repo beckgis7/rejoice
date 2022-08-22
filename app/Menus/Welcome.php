@@ -2,22 +2,17 @@
 
 namespace App\Menus;
 
-    use App\Helpers\https_utils;
-
     class Welcome extends Menu
     {   
-        public $vote_cost;
+        public $subscribe;
 
-        // public function before()
-        // {
-        //     $this->resp = get_data('costing');
-        //     $this->sessionSave('vote_cost', $this->resp['data'][0]);
-        //     $this->sessionSave('ticket_cost', $this->resp['data'][1]);
-     
-        //     log_JSON_file($this->resp['data'][0], 'Welcome--vote-cost');
-        //     log_JSON_file($this->resp['data'][1], 'Welcome--ticket-cost');
-
-        // }
+        public function before(){
+            $this->resp = get_data_id('subscribe/', $this->tel());
+            $this->subscribe = $this->resp['data']['active'];
+            $active = $this->subscribe ? 'Subscribed' : 'Not Subscribed';
+            
+            log_JSON_file("{$this->tel()} - {$active}", 'Check-Subscribe');
+        }
         
         public function message()
         {
@@ -32,12 +27,16 @@ namespace App\Menus;
         {
             $actions = [
                 '1' => [
-                    'display' => 'Subscribe',
-                    'next_menu' => 'Sub::Menu1'
+                    'display' => $this->subscribe ? 'Play Game' : 'Subscribe',
+                    'next_menu' => $this->subscribe ? 'Game::Menu2' : 'Game::Menu1'
                 ],
                 '2' => [
                     'display' => 'Check points',
                     'next_menu' => 'Points::Menu1'
+                ],
+                '3' => [
+                    'display' => 'Buy Credit/ Check Balance',
+                    'next_menu' => 'Credit::Menu1'
                 ],
             ];
 

@@ -23,8 +23,8 @@
             "App\\": "app/"
         },
         "files": [
-            "app/Helpers/http_utils.php",
             "app/Helpers/directoryUtils.php",
+            "app/Helpers/http_utils.php",
             "app/Helpers/logUtils.php"
         ]
     },

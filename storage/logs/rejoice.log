@@ -618,3 +618,1193 @@ User session:
     ]
 }
 
+#11 [EMERGENCY] [Mon, 15 08 2022, 16:38:43]
+Error:
+Call to a member function map() on array in file C:\laragon\www\mybet-ussd\app\Menus\Sub\Menu2.php on line 40
+
+Processing menu: Sub::Menu2 in file C:\laragon\www\mybet-ussd\app\Menus\Sub\Menu2.php
+
+Stack trace:
+
+
+#0 [internal function]: App\Menus\Sub\Menu2->actions(Object(Rejoice\Foundation\UserResponse))
+
+
+#1 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(895): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#2 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(1060): Rejoice\Foundation\Kernel->actionsFromMenuEntity()
+
+
+#3 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(935): Rejoice\Foundation\Kernel->menuActions('Sub::Menu2')
+
+
+#4 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(640): Rejoice\Foundation\Kernel->runState('Sub::Menu2')
+
+
+#5 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('Sub::Menu2')
+
+
+#6 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#7 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#8 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#9 C:\laragon\www\mybet-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#10 {main}
+
+User session:
+{
+    "__last_connection": 1660581520.738809,
+    "user_previous_responses": {
+        "welcome": [
+            "1"
+        ],
+        "Sub::Menu1": [
+            "1"
+        ]
+    },
+    "modify_menus": {
+        "actions": {
+            "1": {
+                "display": "Confirm",
+                "next_menu": "Sub::Menu2"
+            },
+            "2": {
+                "display": "Decline",
+                "next_menu": "__end"
+            }
+        }
+    },
+    "current_menu_name": "Sub::Menu1",
+    "id": "1660581518114",
+    "currentMenuSplitted": true,
+    "currentMenuSplitIndex": 1,
+    "currentMenuSplitStart": false,
+    "currentMenuSplitEnd": true,
+    "currentMenuChunks": [
+        "Subscription successful.\nYou will be required to\nanswer 12 questions\neach week for 7 weeks.\nYou will be charged\n00. Next page",
+        "GHS1 for each answer\n\n1. Confirm\n2. Decline\n0. Back"
+    ],
+    "currentMenuHasBackAction": false,
+    "history_bag": [
+        "welcome"
+    ],
+    "session_data_accessible_by_app": {
+        "questions": {
+            "id": 2,
+            "question_tile": "Winner of Ghana Premier League",
+            "question_points": "30",
+            "created-by": "1",
+            "active": 1,
+            "remember_token": null,
+            "created_at": "2022-08-12T00:12:33.000000Z",
+            "updated_at": "2022-08-12T00:12:30.000000Z",
+            "no_options": 0
+        },
+        "options": [
+            {
+                "id": 4,
+                "question_id": "2",
+                "option_tile": "Kotoko",
+                "is_correct": 0,
+                "created-by": "1",
+                "remember_token": null,
+                "created_at": "2022-08-12T00:22:49.000000Z",
+                "updated_at": "2022-08-12T00:22:51.000000Z"
+            },
+            {
+                "id": 5,
+                "question_id": "2",
+                "option_tile": "Hearts of Oak",
+                "is_correct": 1,
+                "created-by": "1",
+                "remember_token": null,
+                "created_at": "2022-08-12T00:23:09.000000Z",
+                "updated_at": "2022-11-01T00:23:14.000000Z"
+            },
+            {
+                "id": 6,
+                "question_id": "2",
+                "option_tile": "King Faisal",
+                "is_correct": 0,
+                "created-by": "1",
+                "remember_token": null,
+                "created_at": "2022-08-12T00:23:51.000000Z",
+                "updated_at": "2022-08-12T00:23:54.000000Z"
+            }
+        ]
+    }
+}
+
+#12 [EMERGENCY] [Tue, 16 08 2022, 07:59:39]
+Error:
+syntax error, unexpected 'return' (T_RETURN) in file C:\laragon\www\mybet-ussd\app\Menus\Sub\Menu2.php on line 80
+
+Processing menu: Sub::Menu1 in file C:\laragon\www\mybet-ussd\app\Menus\Sub\Menu1.php
+
+Stack trace:
+
+
+#0 C:\laragon\www\mybet-ussd\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\laragon\\www\\...')
+
+
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Menus\\Sub\\M...')
+
+
+#2 [internal function]: spl_autoload_call('App\\Menus\\Sub\\M...')
+
+
+#3 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Menu\Menus.php(342): class_exists('App\\Menus\\Sub\\M...')
+
+
+#4 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(501): Rejoice\Menu\Menus->menuStateExists('Sub::Menu2')
+
+
+#5 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#6 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#7 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#8 C:\laragon\www\mybet-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#9 {main}
+
+User session:
+{
+    "__last_connection": 1660636772.322875,
+    "user_previous_responses": {
+        "welcome": [
+            "1"
+        ],
+        "Sub::Menu1": []
+    },
+    "modify_menus": {
+        "actions": {
+            "1": {
+                "display": "Confirm",
+                "next_menu": "Sub::Menu2"
+            },
+            "2": {
+                "display": "Decline",
+                "next_menu": "__end"
+            }
+        }
+    },
+    "current_menu_name": "Sub::Menu1",
+    "id": "1660636771642",
+    "currentMenuSplitted": true,
+    "currentMenuSplitIndex": 1,
+    "currentMenuSplitStart": false,
+    "currentMenuSplitEnd": true,
+    "currentMenuChunks": [
+        "Subscription successful.\nYou will be required to\nanswer 12 questions\neach week for 7 weeks.\nYou will be charged\n00. Next page",
+        "GHS1 for each answer\n\n1. Confirm\n2. Decline\n0. Back"
+    ],
+    "currentMenuHasBackAction": false,
+    "history_bag": [
+        "welcome"
+    ]
+}
+
+#13 [EMERGENCY] [Tue, 16 08 2022, 07:59:59]
+Error:
+syntax error, unexpected 'return' (T_RETURN) in file C:\laragon\www\mybet-ussd\app\Menus\Sub\Menu2.php on line 80
+
+Processing menu: Sub::Menu1 in file C:\laragon\www\mybet-ussd\app\Menus\Sub\Menu1.php
+
+Stack trace:
+
+
+#0 C:\laragon\www\mybet-ussd\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\laragon\\www\\...')
+
+
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Menus\\Sub\\M...')
+
+
+#2 [internal function]: spl_autoload_call('App\\Menus\\Sub\\M...')
+
+
+#3 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Menu\Menus.php(342): class_exists('App\\Menus\\Sub\\M...')
+
+
+#4 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(501): Rejoice\Menu\Menus->menuStateExists('Sub::Menu2')
+
+
+#5 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#6 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#7 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#8 C:\laragon\www\mybet-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#9 {main}
+
+User session:
+{
+    "__last_connection": 1660636793.718116,
+    "user_previous_responses": {
+        "welcome": [
+            "1"
+        ],
+        "Sub::Menu1": []
+    },
+    "modify_menus": {
+        "actions": {
+            "1": {
+                "display": "Confirm",
+                "next_menu": "Sub::Menu2"
+            },
+            "2": {
+                "display": "Decline",
+                "next_menu": "__end"
+            }
+        }
+    },
+    "current_menu_name": "Sub::Menu1",
+    "id": "1660636793666",
+    "currentMenuSplitted": true,
+    "currentMenuSplitIndex": 1,
+    "currentMenuSplitStart": false,
+    "currentMenuSplitEnd": true,
+    "currentMenuChunks": [
+        "Subscription successful.\nYou will be required to\nanswer 12 questions\neach week for 7 weeks.\nYou will be charged\n00. Next page",
+        "GHS1 for each answer\n\n1. Confirm\n2. Decline\n0. Back"
+    ],
+    "currentMenuHasBackAction": false,
+    "history_bag": [
+        "welcome"
+    ]
+}
+
+#14 [EMERGENCY] [Tue, 16 08 2022, 08:07:25]
+Error:
+syntax error, unexpected 'return' (T_RETURN) in file C:\laragon\www\mybet-ussd\app\Menus\Sub\Menu2.php on line 77
+
+Processing menu: Sub::Menu1 in file C:\laragon\www\mybet-ussd\app\Menus\Sub\Menu1.php
+
+Stack trace:
+
+
+#0 C:\laragon\www\mybet-ussd\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\laragon\\www\\...')
+
+
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Menus\\Sub\\M...')
+
+
+#2 [internal function]: spl_autoload_call('App\\Menus\\Sub\\M...')
+
+
+#3 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Menu\Menus.php(342): class_exists('App\\Menus\\Sub\\M...')
+
+
+#4 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(501): Rejoice\Menu\Menus->menuStateExists('Sub::Menu2')
+
+
+#5 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#6 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#7 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#8 C:\laragon\www\mybet-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#9 {main}
+
+User session:
+{
+    "__last_connection": 1660637239.197805,
+    "user_previous_responses": {
+        "welcome": [
+            "1"
+        ],
+        "Sub::Menu1": []
+    },
+    "modify_menus": {
+        "actions": {
+            "1": {
+                "display": "Confirm",
+                "next_menu": "Sub::Menu2"
+            },
+            "2": {
+                "display": "Decline",
+                "next_menu": "__end"
+            }
+        }
+    },
+    "current_menu_name": "Sub::Menu1",
+    "id": "1660637239142",
+    "currentMenuSplitted": true,
+    "currentMenuSplitIndex": 1,
+    "currentMenuSplitStart": false,
+    "currentMenuSplitEnd": true,
+    "currentMenuChunks": [
+        "Subscription successful.\nYou will be required to\nanswer 12 questions\neach week for 7 weeks.\nYou will be charged\n00. Next page",
+        "GHS1 for each answer\n\n1. Confirm\n2. Decline\n0. Back"
+    ],
+    "currentMenuHasBackAction": false,
+    "history_bag": [
+        "welcome"
+    ]
+}
+
+#15 [EMERGENCY] [Tue, 16 08 2022, 08:08:07]
+Error:
+syntax error, unexpected 'return' (T_RETURN) in file C:\laragon\www\mybet-ussd\app\Menus\Sub\Menu2.php on line 77
+
+Processing menu: Sub::Menu1 in file C:\laragon\www\mybet-ussd\app\Menus\Sub\Menu1.php
+
+Stack trace:
+
+
+#0 C:\laragon\www\mybet-ussd\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\laragon\\www\\...')
+
+
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Menus\\Sub\\M...')
+
+
+#2 [internal function]: spl_autoload_call('App\\Menus\\Sub\\M...')
+
+
+#3 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Menu\Menus.php(342): class_exists('App\\Menus\\Sub\\M...')
+
+
+#4 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(501): Rejoice\Menu\Menus->menuStateExists('Sub::Menu2')
+
+
+#5 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#6 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#7 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#8 C:\laragon\www\mybet-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#9 {main}
+
+User session:
+{
+    "__last_connection": 1660637281.799666,
+    "user_previous_responses": {
+        "welcome": [
+            "1"
+        ],
+        "Sub::Menu1": []
+    },
+    "modify_menus": {
+        "actions": {
+            "1": {
+                "display": "Confirm",
+                "next_menu": "Sub::Menu2"
+            },
+            "2": {
+                "display": "Decline",
+                "next_menu": "__end"
+            }
+        }
+    },
+    "current_menu_name": "Sub::Menu1",
+    "id": "1660637281763",
+    "currentMenuSplitted": true,
+    "currentMenuSplitIndex": 1,
+    "currentMenuSplitStart": false,
+    "currentMenuSplitEnd": true,
+    "currentMenuChunks": [
+        "Subscription successful.\nYou will be required to\nanswer 12 questions\neach week for 7 weeks.\nYou will be charged\n00. Next page",
+        "GHS1 for each answer\n\n1. Confirm\n2. Decline\n0. Back"
+    ],
+    "currentMenuHasBackAction": false,
+    "history_bag": [
+        "welcome"
+    ]
+}
+
+#16 [EMERGENCY] [Tue, 16 08 2022, 08:08:35]
+Error:
+syntax error, unexpected 'return' (T_RETURN) in file C:\laragon\www\mybet-ussd\app\Menus\Sub\Menu2.php on line 77
+
+Processing menu: Sub::Menu1 in file C:\laragon\www\mybet-ussd\app\Menus\Sub\Menu1.php
+
+Stack trace:
+
+
+#0 C:\laragon\www\mybet-ussd\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\laragon\\www\\...')
+
+
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Menus\\Sub\\M...')
+
+
+#2 [internal function]: spl_autoload_call('App\\Menus\\Sub\\M...')
+
+
+#3 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Menu\Menus.php(342): class_exists('App\\Menus\\Sub\\M...')
+
+
+#4 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(501): Rejoice\Menu\Menus->menuStateExists('Sub::Menu2')
+
+
+#5 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#6 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#7 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#8 C:\laragon\www\mybet-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#9 {main}
+
+User session:
+{
+    "__last_connection": 1660637311.506712,
+    "user_previous_responses": {
+        "welcome": [
+            "1"
+        ],
+        "Sub::Menu1": []
+    },
+    "modify_menus": {
+        "actions": {
+            "1": {
+                "display": "Confirm",
+                "next_menu": "Sub::Menu2"
+            },
+            "2": {
+                "display": "Decline",
+                "next_menu": "__end"
+            }
+        }
+    },
+    "current_menu_name": "Sub::Menu1",
+    "id": "1660637311471",
+    "currentMenuSplitted": true,
+    "currentMenuSplitIndex": 1,
+    "currentMenuSplitStart": false,
+    "currentMenuSplitEnd": true,
+    "currentMenuChunks": [
+        "Subscription successful.\nYou will be required to\nanswer 12 questions\neach week for 7 weeks.\nYou will be charged\n00. Next page",
+        "GHS1 for each answer\n\n1. Confirm\n2. Decline\n0. Back"
+    ],
+    "currentMenuHasBackAction": false,
+    "history_bag": [
+        "welcome"
+    ]
+}
+
+#17 [EMERGENCY] [Wed, 17 08 2022, 14:25:07]
+Error:
+syntax error, unexpected '}' in file C:\laragon\www\mybet-ussd\app\Menus\Game\Menu4.php on line 19
+
+Processing menu: Game::Menu3 in file C:\laragon\www\mybet-ussd\app\Menus\Game\Menu3.php
+
+Stack trace:
+
+
+#0 C:\laragon\www\mybet-ussd\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\laragon\\www\\...')
+
+
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Menus\\Game\\...')
+
+
+#2 [internal function]: spl_autoload_call('App\\Menus\\Game\\...')
+
+
+#3 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Menu\Menus.php(342): class_exists('App\\Menus\\Game\\...')
+
+
+#4 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(501): Rejoice\Menu\Menus->menuStateExists('Game::Menu4')
+
+
+#5 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#6 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#7 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#8 C:\laragon\www\mybet-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#9 {main}
+
+User session:
+{
+    "__last_connection": 1660746296.099034,
+    "user_previous_responses": {
+        "welcome": [
+            "1"
+        ],
+        "Game::Menu2": [
+            "1"
+        ]
+    },
+    "modify_menus": {
+        "actions": []
+    },
+    "current_menu_name": "Game::Menu3",
+    "id": "1660746296024",
+    "session_data_accessible_by_app": {
+        "questions": {
+            "id": 2,
+            "question_tile": "Winner of Ghana Premier League",
+            "question_points": "30",
+            "created-by": "1",
+            "active": 1,
+            "remember_token": null,
+            "created_at": "2022-08-12T00:12:33.000000Z",
+            "updated_at": "2022-08-12T00:12:30.000000Z",
+            "no_options": 0
+        },
+        "options": [
+            {
+                "id": 4,
+                "question_id": "2",
+                "option_tile": "Kotoko",
+                "is_correct": 0,
+                "created-by": "1",
+                "remember_token": null,
+                "created_at": "2022-08-12T00:22:49.000000Z",
+                "updated_at": "2022-08-12T00:22:51.000000Z"
+            },
+            {
+                "id": 5,
+                "question_id": "2",
+                "option_tile": "Hearts of Oak",
+                "is_correct": 1,
+                "created-by": "1",
+                "remember_token": null,
+                "created_at": "2022-08-12T00:23:09.000000Z",
+                "updated_at": "2022-11-01T00:23:14.000000Z"
+            },
+            {
+                "id": 6,
+                "question_id": "2",
+                "option_tile": "King Faisal",
+                "is_correct": 0,
+                "created-by": "1",
+                "remember_token": null,
+                "created_at": "2022-08-12T00:23:51.000000Z",
+                "updated_at": "2022-08-12T00:23:54.000000Z"
+            }
+        ],
+        "momo-pin": "1234"
+    },
+    "history_bag": [
+        "welcome",
+        "Game::Menu2"
+    ]
+}
+
+#18 [EMERGENCY] [Fri, 19 08 2022, 08:28:19]
+Error:
+No user response associated to the menu "Game::Menu2" in file C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\UserResponse.php on line 33
+
+Processing menu: Game::Menu2 in file C:\laragon\www\mybet-ussd\app\Menus\Game\Menu2.php
+
+Stack trace:
+
+
+#0 C:\laragon\www\mybet-ussd\app\Menus\Game\Menu2.php(14): Rejoice\Foundation\UserResponse->get('Game::Menu2')
+
+
+#1 [internal function]: App\Menus\Game\Menu2->before(Object(Rejoice\Foundation\UserResponse))
+
+
+#2 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(913): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#3 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(924): Rejoice\Foundation\Kernel->callBeforeHook()
+
+
+#4 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(640): Rejoice\Foundation\Kernel->runState('Game::Menu2')
+
+
+#5 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('Game::Menu2')
+
+
+#6 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#7 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#8 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#9 C:\laragon\www\mybet-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#10 {main}
+
+User session:
+{
+    "__last_connection": 1660897696.221607,
+    "user_previous_responses": {
+        "welcome": [
+            "1"
+        ]
+    },
+    "modify_menus": {
+        "actions": {
+            "1": {
+                "display": "Play Game",
+                "next_menu": "Game::Menu2"
+            },
+            "2": {
+                "display": "Check points",
+                "next_menu": "Points::Menu1"
+            }
+        }
+    },
+    "current_menu_name": "welcome",
+    "id": "1660897695614"
+}
+
+#19 [EMERGENCY] [Fri, 19 08 2022, 08:35:09]
+Error:
+No user response associated to the menu "Game::Menu2" in file C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\UserResponse.php on line 33
+
+Processing menu: Game::Menu2 in file C:\laragon\www\mybet-ussd\app\Menus\Game\Menu2.php
+
+Stack trace:
+
+
+#0 C:\laragon\www\mybet-ussd\app\Menus\Game\Menu2.php(14): Rejoice\Foundation\UserResponse->get('Game::Menu2')
+
+
+#1 [internal function]: App\Menus\Game\Menu2->before(Object(Rejoice\Foundation\UserResponse))
+
+
+#2 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(913): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#3 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(924): Rejoice\Foundation\Kernel->callBeforeHook()
+
+
+#4 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(640): Rejoice\Foundation\Kernel->runState('Game::Menu2')
+
+
+#5 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('Game::Menu2')
+
+
+#6 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#7 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#8 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#9 C:\laragon\www\mybet-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#10 {main}
+
+User session:
+{
+    "__last_connection": 1660898107.34387,
+    "user_previous_responses": {
+        "welcome": [
+            "1"
+        ]
+    },
+    "modify_menus": {
+        "actions": {
+            "1": {
+                "display": "Play Game",
+                "next_menu": "Game::Menu2"
+            },
+            "2": {
+                "display": "Check points",
+                "next_menu": "Points::Menu1"
+            }
+        }
+    },
+    "current_menu_name": "welcome",
+    "id": "1660898107300"
+}
+
+#20 [EMERGENCY] [Fri, 19 08 2022, 08:59:15]
+Error:
+No user response associated to the menu "Game::Menu2" in file C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\UserResponse.php on line 33
+
+Processing menu: Game::Menu2 in file C:\laragon\www\mybet-ussd\app\Menus\Game\Menu2.php
+
+Stack trace:
+
+
+#0 C:\laragon\www\mybet-ussd\app\Menus\Game\Menu2.php(14): Rejoice\Foundation\UserResponse->get('Game::Menu2')
+
+
+#1 [internal function]: App\Menus\Game\Menu2->before(Object(Rejoice\Foundation\UserResponse))
+
+
+#2 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(913): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#3 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(924): Rejoice\Foundation\Kernel->callBeforeHook()
+
+
+#4 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(640): Rejoice\Foundation\Kernel->runState('Game::Menu2')
+
+
+#5 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('Game::Menu2')
+
+
+#6 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#7 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#8 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#9 C:\laragon\www\mybet-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#10 {main}
+
+User session:
+{
+    "__last_connection": 1660899552.182002,
+    "user_previous_responses": {
+        "welcome": [
+            "1"
+        ]
+    },
+    "modify_menus": {
+        "actions": {
+            "1": {
+                "display": "Play Game",
+                "next_menu": "Game::Menu2"
+            },
+            "2": {
+                "display": "Check points",
+                "next_menu": "Points::Menu1"
+            }
+        }
+    },
+    "current_menu_name": "welcome",
+    "id": "1660899552115"
+}
+
+#21 [EMERGENCY] [Fri, 19 08 2022, 09:00:11]
+Error:
+No user response associated to the menu "Game::Menu2" in file C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\UserResponse.php on line 33
+
+Processing menu: Game::Menu2 in file C:\laragon\www\mybet-ussd\app\Menus\Game\Menu2.php
+
+Stack trace:
+
+
+#0 C:\laragon\www\mybet-ussd\app\Menus\Game\Menu2.php(14): Rejoice\Foundation\UserResponse->get('Game::Menu2')
+
+
+#1 [internal function]: App\Menus\Game\Menu2->before(Object(Rejoice\Foundation\UserResponse))
+
+
+#2 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(913): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#3 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(924): Rejoice\Foundation\Kernel->callBeforeHook()
+
+
+#4 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(640): Rejoice\Foundation\Kernel->runState('Game::Menu2')
+
+
+#5 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('Game::Menu2')
+
+
+#6 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#7 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#8 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#9 C:\laragon\www\mybet-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#10 {main}
+
+User session:
+{
+    "__last_connection": 1660899609.86051,
+    "user_previous_responses": {
+        "welcome": [
+            "1"
+        ]
+    },
+    "modify_menus": {
+        "actions": {
+            "1": {
+                "display": "Play Game",
+                "next_menu": "Game::Menu2"
+            },
+            "2": {
+                "display": "Check points",
+                "next_menu": "Points::Menu1"
+            }
+        }
+    },
+    "current_menu_name": "welcome",
+    "id": "1660899609824"
+}
+
+#22 [EMERGENCY] [Fri, 19 08 2022, 09:00:45]
+Error:
+No user response associated to the menu "Game::Menu2" in file C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\UserResponse.php on line 33
+
+Processing menu: Game::Menu2 in file C:\laragon\www\mybet-ussd\app\Menus\Game\Menu2.php
+
+Stack trace:
+
+
+#0 C:\laragon\www\mybet-ussd\app\Menus\Game\Menu2.php(14): Rejoice\Foundation\UserResponse->get('Game::Menu2')
+
+
+#1 [internal function]: App\Menus\Game\Menu2->before(Object(Rejoice\Foundation\UserResponse))
+
+
+#2 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(913): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#3 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(924): Rejoice\Foundation\Kernel->callBeforeHook()
+
+
+#4 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(640): Rejoice\Foundation\Kernel->runState('Game::Menu2')
+
+
+#5 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('Game::Menu2')
+
+
+#6 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#7 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#8 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#9 C:\laragon\www\mybet-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#10 {main}
+
+User session:
+{
+    "__last_connection": 1660899643.805041,
+    "user_previous_responses": {
+        "welcome": [
+            "1"
+        ]
+    },
+    "modify_menus": {
+        "actions": {
+            "1": {
+                "display": "Play Game",
+                "next_menu": "Game::Menu2"
+            },
+            "2": {
+                "display": "Check points",
+                "next_menu": "Points::Menu1"
+            }
+        }
+    },
+    "current_menu_name": "welcome",
+    "id": "1660899643746"
+}
+
+#23 [EMERGENCY] [Fri, 19 08 2022, 09:01:02]
+Error:
+No user response associated to the menu "Game::Menu2" in file C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\UserResponse.php on line 33
+
+Processing menu: Game::Menu2 in file C:\laragon\www\mybet-ussd\app\Menus\Game\Menu2.php
+
+Stack trace:
+
+
+#0 C:\laragon\www\mybet-ussd\app\Menus\Game\Menu2.php(14): Rejoice\Foundation\UserResponse->get('Game::Menu2')
+
+
+#1 [internal function]: App\Menus\Game\Menu2->before(Object(Rejoice\Foundation\UserResponse))
+
+
+#2 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(913): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#3 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(924): Rejoice\Foundation\Kernel->callBeforeHook()
+
+
+#4 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(640): Rejoice\Foundation\Kernel->runState('Game::Menu2')
+
+
+#5 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('Game::Menu2')
+
+
+#6 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#7 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#8 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#9 C:\laragon\www\mybet-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#10 {main}
+
+User session:
+{
+    "__last_connection": 1660899660.36187,
+    "user_previous_responses": {
+        "welcome": [
+            "1"
+        ]
+    },
+    "modify_menus": {
+        "actions": {
+            "1": {
+                "display": "Play Game",
+                "next_menu": "Game::Menu2"
+            },
+            "2": {
+                "display": "Check points",
+                "next_menu": "Points::Menu1"
+            }
+        }
+    },
+    "current_menu_name": "welcome",
+    "id": "1660899660306"
+}
+
+#24 [EMERGENCY] [Fri, 19 08 2022, 09:01:37]
+Error:
+No user response associated to the menu "Game::Menu2" in file C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\UserResponse.php on line 33
+
+Processing menu: Game::Menu2 in file C:\laragon\www\mybet-ussd\app\Menus\Game\Menu2.php
+
+Stack trace:
+
+
+#0 C:\laragon\www\mybet-ussd\app\Menus\Game\Menu2.php(14): Rejoice\Foundation\UserResponse->get('Game::Menu2')
+
+
+#1 [internal function]: App\Menus\Game\Menu2->before(Object(Rejoice\Foundation\UserResponse))
+
+
+#2 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(913): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#3 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(924): Rejoice\Foundation\Kernel->callBeforeHook()
+
+
+#4 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(640): Rejoice\Foundation\Kernel->runState('Game::Menu2')
+
+
+#5 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('Game::Menu2')
+
+
+#6 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#7 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#8 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#9 C:\laragon\www\mybet-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#10 {main}
+
+User session:
+{
+    "__last_connection": 1660899695.922786,
+    "user_previous_responses": {
+        "welcome": [
+            "1"
+        ]
+    },
+    "modify_menus": {
+        "actions": {
+            "1": {
+                "display": "Play Game",
+                "next_menu": "Game::Menu2"
+            },
+            "2": {
+                "display": "Check points",
+                "next_menu": "Points::Menu1"
+            }
+        }
+    },
+    "current_menu_name": "welcome",
+    "id": "1660899695880"
+}
+
+#25 [EMERGENCY] [Fri, 19 08 2022, 10:31:12]
+Error:
+No user response associated to the menu "Game::TryAgain" in file C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\UserResponse.php on line 33
+
+Processing menu: Game::TryAgain in file C:\laragon\www\mybet-ussd\app\Menus\Game\TryAgain.php
+
+Stack trace:
+
+
+#0 C:\laragon\www\mybet-ussd\app\Menus\Game\TryAgain.php(19): Rejoice\Foundation\UserResponse->get('Game::TryAgain')
+
+
+#1 [internal function]: App\Menus\Game\TryAgain->before(Object(Rejoice\Foundation\UserResponse))
+
+
+#2 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(913): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#3 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(924): Rejoice\Foundation\Kernel->callBeforeHook()
+
+
+#4 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(640): Rejoice\Foundation\Kernel->runState('Game::TryAgain')
+
+
+#5 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('Game::TryAgain')
+
+
+#6 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#7 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#8 C:\laragon\www\mybet-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#9 C:\laragon\www\mybet-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#10 {main}
+
+User session:
+{
+    "__last_connection": 1660899743.576788,
+    "user_previous_responses": {
+        "welcome": [
+            "1"
+        ],
+        "Game::Menu2": [
+            [
+                4,
+                "Kotoko"
+            ]
+        ],
+        "Game::Menu3": [
+            "1234"
+        ],
+        "Game::Menu4": [
+            "1"
+        ]
+    },
+    "modify_menus": {
+        "actions": {
+            "1": {
+                "display": "Try again",
+                "next_menu": "Game::TryAgain"
+            },
+            "2": {
+                "display": "End",
+                "next_menu": "__end"
+            }
+        }
+    },
+    "current_menu_name": "Game::Menu4",
+    "id": "1660899741480",
+    "session_data_accessible_by_app": {
+        "questions": {
+            "id": 2,
+            "question_tile": "Winner of Ghana Premier League",
+            "question_points": "30",
+            "created-by": "1",
+            "active": 1,
+            "remember_token": null,
+            "created_at": "2022-08-12T00:12:33.000000Z",
+            "updated_at": "2022-08-12T00:12:30.000000Z",
+            "no_options": 0,
+            "option_id": 5
+        },
+        "options": [
+            {
+                "id": 4,
+                "question_id": "2",
+                "option_tile": "Kotoko",
+                "is_correct": 0,
+                "created-by": "1",
+                "remember_token": null,
+                "created_at": "2022-08-12T00:22:49.000000Z",
+                "updated_at": "2022-08-12T00:22:51.000000Z"
+            },
+            {
+                "id": 5,
+                "question_id": "2",
+                "option_tile": "Hearts of Oak",
+                "is_correct": 1,
+                "created-by": "1",
+                "remember_token": null,
+                "created_at": "2022-08-12T00:23:09.000000Z",
+                "updated_at": "2022-11-01T00:23:14.000000Z"
+            },
+            {
+                "id": 6,
+                "question_id": "2",
+                "option_tile": "King Faisal",
+                "is_correct": 0,
+                "created-by": "1",
+                "remember_token": null,
+                "created_at": "2022-08-12T00:23:51.000000Z",
+                "updated_at": "2022-08-12T00:23:54.000000Z"
+            }
+        ],
+        "momo-pin": "1234"
+    },
+    "history_bag": [
+        "welcome",
+        "Game::Menu2",
+        "Game::Menu3"
+    ]
+}
+
